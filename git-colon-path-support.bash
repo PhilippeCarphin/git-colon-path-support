@@ -60,7 +60,8 @@ _git_cd(){
 
     compopt -o filenames
     local cur prev words cword git_repo
-    _init_completion || return;
+    COMPREPLY=()
+    _get_comp_words_by_ref cur prev words cword
 
     if ! git_repo="$(git rev-parse --show-toplevel 2>/dev/null)" ; then
         return 1
