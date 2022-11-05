@@ -47,7 +47,7 @@ git_cd(){
     fi
 
     if [[ -n "${GIT_CD_VERBOSE:-}" ]] ; then
-        printf "\033[33mcd ${dir}\033[0m\n"
+        printf "cd ${dir}\n"
     fi
 }
 
