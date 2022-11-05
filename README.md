@@ -9,6 +9,9 @@ This file adds support for such paths to the `cd` command.
 
 Source the file `git-colon-path-support.bash` at BASH startup.
 
+Setting the variable `GIT_CD_VERBOSE` to a non-empty value will cause `cd` to
+print the full path when `cd`-ing to a "colon path".
+
 ### `cd` command
 
 Inside a git repo
